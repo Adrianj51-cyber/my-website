@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Technologies & AI</title>
+  <style>
+    :root{--bg:#07111f;--card:#0d1b2e;--card2:#10243b;--text:#edf6ff;--muted:#a9bdd1;--accent:#54c7ff;--accent2:#8b7cff;--border:#23415d}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#07111f,#0a1728 45%,#07111f);color:var(--text);line-height:1.65}
+    header{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+    nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 22px}
+    .logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:.95rem}nav a:hover{color:white}
+    .hero{max-width:1100px;margin:auto;padding:90px 22px 55px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+    .badge{display:inline-block;padding:7px 12px;border:1px solid #28567a;border-radius:999px;color:#9ee2ff;background:#0b2135;font-size:.82rem}
+    h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.03;margin:18px 0}h1 span{color:var(--accent)}
+    h2{font-size:2rem;margin-top:0}h3{margin-bottom:8px;color:#dff5ff}
+    p{color:var(--muted)}.hero p{font-size:1.1rem}
+    .hero-art{background:linear-gradient(145deg,#102943,#0a1728);border:1px solid var(--border);border-radius:25px;padding:18px;box-shadow:0 20px 70px rgba(0,0,0,.25)}
+    .hero-art img{width:100%;display:block;border-radius:15px}
+    main{max-width:1100px;margin:auto;padding:0 22px 70px}
+    section{padding:70px 0;border-bottom:1px solid rgba(35,65,93,.55)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:rgba(13,27,46,.82);border:1px solid var(--border);border-radius:18px;padding:25px}
+    .icon{font-size:2rem}.links a{display:inline-block;margin:8px 8px 0 0;padding:9px 13px;border-radius:10px;background:#102b43;color:#bcecff;text-decoration:none}
+    .chat{display:flex;flex-direction:column;gap:14px}.messages{height:340px;overflow:auto;background:#07121f;border:1px solid var(--border);border-radius:14px;padding:16px}
+    .msg{max-width:80%;padding:10px 13px;border-radius:14px;margin:8px 0}.bot{background:#132c45}.user{background:#214e70;margin-left:auto}
+    .row{display:flex;gap:10px}.row input{flex:1}.input,.btn{border:1px solid var(--border);border-radius:10px;padding:12px;background:#091827;color:white}.btn{cursor:pointer;background:#17638c;border-color:#2a8ebf;font-weight:700}.btn:hover{filter:brightness(1.12)}
+    .avatar-wrap{display:grid;grid-template-columns:300px 1fr;gap:25px;align-items:start}.avatar-box{background:#07121f;border:1px solid var(--border);border-radius:18px;padding:15px;text-align:center}
+    #avatar{width:240px;height:280px;object-fit:cover;border-radius:50% 50% 42% 42%;background:linear-gradient(135deg,#182f48,#0b1726);border:4px solid #286487}
+    .status{font-size:.85rem;color:#9bdcff;margin:10px 0}.talkbox{min-height:300px}
+    footer{text-align:center;padding:35px 20px;color:#7f96aa;font-size:.9rem}
+    @media(max-width:750px){.hero,.grid,.avatar-wrap{grid-template-columns:1fr}nav div:last-child{display:none}.hero{padding-top:55px}.avatar-box{max-width:350px;margin:auto}}
+  </style>
+</head>
+<body>
+<header><nav><div class="logo">INTERNET<span>.AI</span></div><div>
+<a href="#internet">Internet</a><a href="#chatbot">AI Chatbot</a><a href="#person">Digital Person</a></div></nav></header>
+
+<div class="hero">
+  <div>
+    <span class="badge">Assignment 3 • Internet Technologies & Interactive AI</span>
+    <h1>How the <span>Internet</span> connects us.</h1>
+    <p>A simple guide to the technology behind websites, Internet providers, browsers, search engines, and interactive artificial intelligence.</p>
+    <a class="btn" href="#internet" style="display:inline-block;text-decoration:none">Explore the website ↓</a>
+  </div>
+  <div class="hero-art"><img src="internet-network.svg" alt="Illustration of devices connected through the Internet"></div>
+</div>
+
+<main>
+<section id="internet">
+  <h2>Part 1: Internet Technologies</h2>
+  <p>The Internet is a worldwide network of connected computers and devices. When we visit a website, many different technologies work together to move information from a server to our device.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">🌐</div><h3>How the Internet Works</h3>
+      <p>When you enter a website address, your device uses the Domain Name System (DNS) to find the server associated with that name. Your request is broken into small packets of data. Routers move those packets across networks until they reach the server. The server sends information back, and your browser puts the pieces together to display the webpage.</p>
+    </article>
+    <article class="card"><div class="icon">📡</div><h3>Internet Service Providers (ISPs)</h3>
+      <p>An Internet Service Provider, or ISP, is a company that connects customers to the Internet. The ISP may deliver the connection through fiber, cable, DSL, cellular networks, or other technologies. Your ISP gives your home or device a path to communicate with computers and services around the world.</p>
+    </article>
+    <article class="card"><div class="icon">🧭</div><h3>Web Browsers</h3>
+      <p>A web browser is an application used to access websites. Browsers such as Chrome, Safari, Firefox, and Edge request webpage files from servers and interpret HTML, CSS, and JavaScript so that people can see and interact with the page.</p>
+    </article>
+    <article class="card"><div class="icon">🔎</div><h3>Search Engines</h3>
+      <p>A search engine helps people find information on the Web. Search engines discover webpages, organize information in large indexes, and use algorithms to return results related to a user's search. Examples include Google, Bing, and DuckDuckGo.</p>
+    </article>
+  </div>
+  <div class="card" style="margin-top:20px"><h3>Useful Internet Resources</h3><div class="links">
+    <a href="https://www.icann.org/" target="_blank" rel="noopener">ICANN</a>
+    <a href="https://www.cloudflare.com/learning/" target="_blank" rel="noopener">Cloudflare Learning</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a>
+    <a href="https://www.w3.org/" target="_blank" rel="noopener">W3C</a>
+  </div></div>
+  <div class="card" style="margin-top:20px"><img src="data-packets.svg" alt="Diagram showing data packets traveling between a device and a server" style="width:100%;max-height:330px;object-fit:contain"></div>
+</section>
+
+<section id="chatbot">
+  <h2>Part 2: AI Chatbot</h2>
+  <p>Ask the chatbot a question about Internet technologies. This interactive demonstration responds to common questions and can also explain the topics covered on this page.</p>
+  <div class="card chat">
+    <div id="messages" class="messages">
+      <div class="msg bot">Hi! I'm the Internet Technology AI. Ask me about DNS, ISPs, browsers, search engines, packets, websites, or AI.</div>
+    </div>
+    <div class="row"><input id="chatInput" class="input" placeholder="Ask a question..." autocomplete="off"><button class="btn" onclick="sendChat()">Send</button></div>
+  </div>
+</section>
+
+<section id="person">
+  <h2>Part 3: Interactive AI Digital Person</h2>
+  <p>This section demonstrates the requested process: <strong>Upload Photo → Generate Digital Person → Talk → Ask Questions → Receive Answers.</strong> Upload a photo below. The page creates a personalized digital-person presentation from the uploaded image and gives it a voice using your browser's speech feature.</p>
+  <div class="avatar-wrap">
+    <div class="avatar-box">
+      <img id="avatar" src="avatar-placeholder.svg" alt="Digital person avatar">
+      <div id="status" class="status">No photo uploaded yet.</div>
+      <input id="photoInput" type="file" accept="image/*" class="input" style="width:100%">
+      <button class="btn" style="width:100%;margin-top:10px" onclick="generatePerson()">Generate Digital Person</button>
+    </div>
+    <div class="card talkbox">
+      <h3>Talk to the Digital Person</h3>
+      <p id="personIntro">Upload a photo and click “Generate Digital Person” to begin.</p>
+      <div class="messages" id="personMessages" style="height:180px">
+        <div class="msg bot">I am your interactive digital person. Once you upload a photo, ask me a question!</div>
+      </div>
+      <div class="row" style="margin-top:12px"><input id="personInput" class="input" placeholder="Ask the digital person..." autocomplete="off"><button class="btn" onclick="askPerson()">Ask</button></div>
+      <button class="btn" style="margin-top:10px" onclick="speakLast()">🔊 Speak my last answer</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Created for Assignment 3 • Internet Technologies and Interactive AI Website</footer>
+
+<script>
+const answers = [
+  [/dns|domain name/i, "DNS stands for Domain Name System. It translates a domain name such as example.com into an IP address so your device can locate the correct server."],
+  [/isp|internet service/i, "An ISP is an Internet Service Provider. It connects your device or home network to the Internet using technologies such as fiber, cable, DSL, or cellular networks."],
+  [/browser|chrome|safari|firefox|edge/i, "A web browser is software that requests website files and interprets HTML, CSS, and JavaScript to display an interactive webpage."],
+  [/search engine|google|bing|duckduckgo/i, "A search engine discovers and indexes webpages, then uses algorithms to return results that are relevant to a user's search."],
+  [/packet|data packet/i, "Data sent across the Internet is divided into packets. Routers help move those packets between networks until they reach their destination."],
+  [/internet work|how.*internet/i, "Your device sends a request through a network. DNS can find the server's IP address, routers move packets across networks, and the server sends data back to your browser."],
+  [/ai|artificial intelligence/i, "Artificial intelligence is technology that can perform tasks that normally require human-like abilities, such as recognizing patterns, generating text, or answering questions."],
+  [/website|web page/i, "A website is made from files and services delivered over the Web. HTML provides structure, CSS controls presentation, and JavaScript adds interactive behavior."]
+];
+function getAnswer(q){
+  for(const [re,a] of answers) if(re.test(q)) return a;
+  return "That's a good question! For this project, I can explain how the Internet works, ISPs, browsers, search engines, DNS, data packets, websites, and artificial intelligence.";
+}
+function addMsg(box,text,who){const d=document.createElement('div');d.className='msg '+who;d.textContent=text;box.appendChild(d);box.scrollTop=box.scrollHeight;}
+function sendChat(){
+  const i=document.getElementById('chatInput'); const q=i.value.trim(); if(!q)return;
+  const box=document.getElementById('messages'); addMsg(box,q,'user'); i.value='';
+  setTimeout(()=>addMsg(box,getAnswer(q),'bot'),350);
+}
+document.getElementById('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter')sendChat()});
+
+let generated=false, lastAnswer="";
+function generatePerson(){
+  const file=document.getElementById('photoInput').files[0];
+  if(!file){document.getElementById('status').textContent='Please choose a photo first.';return;}
+  const url=URL.createObjectURL(file);
+  document.getElementById('avatar').src=url;
+  document.getElementById('status').textContent='Digital person generated ✓';
+  document.getElementById('personIntro').textContent='Your uploaded photo is now being used as the visual identity for the interactive digital person. Ask a question below.';
+  generated=true;
+  addMsg(document.getElementById('personMessages'),'Hello! I am ready to talk. What would you like to know?','bot');
+}
+function personAnswer(q){
+  if(!generated)return "Please upload a photo and generate the digital person first.";
+  return getAnswer(q).replace("For this project, ","");
+}
+function askPerson(){
+  const i=document.getElementById('personInput'); const q=i.value.trim(); if(!q)return;
+  const box=document.getElementById('personMessages'); addMsg(box,q,'user'); i.value='';
+  const a=personAnswer(q); lastAnswer=a;
+  setTimeout(()=>{addMsg(box,a,'bot'); if('speechSynthesis' in window){speechSynthesis.cancel(); speechSynthesis.speak(new SpeechSynthesisUtterance(a));}},350);
+}
+function speakLast(){if(lastAnswer && 'speechSynthesis' in window)speechSynthesis.speak(new SpeechSynthesisUtterance(lastAnswer));}
+document.getElementById('personInput').addEventListener('keydown',e=>{if(e.key==='Enter')askPerson()});
+</script>
+</body>
+</html>

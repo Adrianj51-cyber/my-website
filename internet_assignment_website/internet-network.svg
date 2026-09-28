@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#122e49"/><stop offset="1" stop-color="#071522"/></linearGradient></defs>
+<rect width="800" height="500" rx="35" fill="url(#g)"/>
+<g stroke="#54c7ff" stroke-width="4" fill="none" opacity=".85"><path d="M120 250L300 120L500 170L680 100M300 120L360 350L500 170M360 350L650 360L680 100M120 250L360 350"/></g>
+<g fill="#0d2033" stroke="#8b7cff" stroke-width="5"><circle cx="120" cy="250" r="32"/><circle cx="300" cy="120" r="32"/><circle cx="500" cy="170" r="32"/><circle cx="680" cy="100" r="32"/><circle cx="360" cy="350" r="32"/><circle cx="650" cy="360" r="32"/></g>
+<g fill="#edf6ff" font-family="Arial" font-size="22" text-anchor="middle"><text x="120" y="310">Phone</text><text x="300" y="180">Router</text><text x="500" y="230">Server</text><text x="680" y="160">Cloud</text><text x="360" y="410">Laptop</text><text x="650" y="420">Website</text></g>
+<text x="400" y="55" fill="#54c7ff" font-family="Arial" font-size="30" font-weight="bold" text-anchor="middle">The Internet is a Network of Networks</text>
+</svg>
